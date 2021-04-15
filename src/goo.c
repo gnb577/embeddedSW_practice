@@ -4,7 +4,7 @@
 int goo()
 {
 	
-	printf("you execute goo\n");
+	printf("hello goo world!\n");
 	return 1;
 }
 
