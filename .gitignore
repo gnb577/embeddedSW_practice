@@ -1,0 +1,8 @@
+.depend
+bin/*
+build/*
+*.so
+*.o
+
+
+
