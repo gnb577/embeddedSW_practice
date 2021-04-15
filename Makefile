@@ -1,7 +1,9 @@
+
 PROJ_DIR=${PWD}
+SRC_DIR=${PROJ_DIR}/src
 INC_DIR=${PROJ_DIR}/include
 BIN_DIR=${PROJ_DIR}/bin
-BUILD_DIR=${PROJ_DIR}/BUILD
+BUILD_DIR=${PROJ_DIR}/build
 
 OBJS= ${BUILD_DIR}/foo.o ${BUILD_DIR}/goo.o ${BUILD_DIR}/myapp.o
 .SUFFIXES: .o .c
