@@ -1,8 +1,13 @@
 #include <stdio.h>
 #include "funcs.h"
 
-void foo()
+int foo()
 {
-	printf("you execute foo but now it is change\n");
+	int flag=0;
+	if (flag) {
+	printf("hello foo world\n");
+	} else	{printf("good bye~\n");
+	}
+	
 }
 
