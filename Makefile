@@ -10,7 +10,7 @@ OBJS= ${BUILD_DIR}/foo.o ${BUILD_DIR}/goo.o ${BUILD_DIR}/myapp.o
 all: ${BIN_DIR}/myapp
 
 
-./bin/myapp: ./build/foo.o ./build/goo.o ./build/myapp.o
+${BIN_DIR}/myapp: ${OBJS}
 	gcc -o ./bin/myapp  ./build/foo.o ./build/goo.o ./build/myapp.o
 
 ./build/foo.o: ./src/foo.c
@@ -21,5 +21,5 @@ all: ${BIN_DIR}/myapp
 	gcc -c ./src/myapp.c -I./include -o ./build/myapp.o
 
 clean:
-	rm ./build/*.o
-	rm ./bin/*
+	rm ${BUILD_DIR}/*.o
+	rm ${BIN_DIR}/*
